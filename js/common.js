@@ -13,7 +13,7 @@ function page_footer() {
                     </div>
                 </div>
                 <div class="footer-right">
-                    <div>© Sheep-realms<div>
+                    <div><a href="https://github.com/sheep-realms">Sheep-realms</a><div>
                     <div>
                         <a href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a> | 
                         <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化">译名标准化</a>
