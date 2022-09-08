@@ -13,7 +13,10 @@ function page_footer() {
                 </div>
                 <div class="footer-right">
                     <div>© Sheep-realms<div>
-                    <div><a href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a><div>
+                    <div>
+                        <a href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a> | 
+                        <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:">译名标准化</a>
+                    <div>
                 </div>
             </div>
         </div>
@@ -21,11 +24,15 @@ function page_footer() {
 }
 
 function page_main() {
+    let btnNextStageClass = ""
+    if (questioner.questionsBankBuffer.length <= 0) btnNextStageClass = "disable";
     $('#questioner').html(`
         <div class="game-subtitle">Minecraft</div>
         <div class="game-title">译名标准化测试</div>
+        <div class="game-dec">译名标准化之路，任重而道远</div>
         <div class="title-menu">
             <div class="questioner-btn title-menu-item questioner-start">开始测试</div>
+            <div class="questioner-btn title-menu-item questioner-next-stage ${btnNextStageClass}">继续测试</div>
         </div>
         ${page_footer()}
     `)
@@ -76,6 +83,7 @@ function page_questioner(question, progress='0%') {
     let i = -1;
     question.answers.forEach(e => {
         i++;
+        if (i >= 4) return;
         $('#questioner .answers').append(`
             <div class="questioner-btn answer" data-value="${i}">
                 <span class="answer-befor">${String.fromCharCode(65 + i)}</span>
@@ -124,14 +132,21 @@ $(document).on('click', '#questioner .footer:not(.disable) .questioner-next', fu
 function page_clear() {
     let dec = "";
     let btnNextStageClass = "";
+
+    if (questioner.wrongCount <= 0) {
+        dec = "真棒，没有任何错误！";
+    } else {
+        dec = "错题 " + questioner.wrongCount + " 次，要牢记标准译名哦！";
+    }
     if (questioner.questionsBankBuffer.length == 0) {
-        dec = "没有更多条目啦！";
+        dec += "没有更多条目啦！";
         btnNextStageClass = "disable";
     }
+
     $('#questioner').html(`
         <div class="game-subtitle">Minecraft 译名标准化测试</div>
         <div class="game-title">测试完毕</div>
-        <div class="dec">${dec}</div>
+        <div class="game-dec">${dec}</div>
         <div class="title-menu">
             <div class="questioner-btn title-menu-item questioner-next-stage ${btnNextStageClass}">再来几题</div>
             <div class="questioner-btn title-menu-item questioner-mianpage">返回到标题画面</div>

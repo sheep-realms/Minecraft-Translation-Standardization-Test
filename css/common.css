@@ -140,7 +140,7 @@ a:hover {
 
 
 #questioner {
-    padding: 5rem 1rem 0 1rem;
+    padding: 5rem 1rem 220px 1rem;
     text-align: center;
 }
 
@@ -158,8 +158,14 @@ a:hover {
 #questioner .game-subtitle,
 #questioner .title,
 #questioner .type,
-#questioner .dec {
+#questioner .dec,
+#questioner .game-dec {
     text-align: center;
+}
+
+#questioner .game-dec {
+    color: var(--el-text-color-regular);
+    margin-top: 2rem;
 }
 
 #questioner .title-menu {
@@ -191,6 +197,8 @@ a:hover {
     background-color: var(--el-color-success);
     height: 0.75rem;
     transition: width .3s;
+    /* box-sizing: border-box;
+    border-bottom: var(--el-color-success-dark-2) 2px solid; */
 }
 
 #questioner .title {
@@ -237,6 +245,7 @@ a:hover {
 }
 
 #questioner .footer {
+    background-color: var(--el-color-white);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -298,6 +307,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 567px) {
+    #questioner {
+        padding: 3rem 1rem 200px 1rem;
+    }
+
     #questioner .footer {
         min-height: 180px;
     }

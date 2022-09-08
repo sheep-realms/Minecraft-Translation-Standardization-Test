@@ -5,6 +5,7 @@ class Questioner {
         this.questionsRuntimeIndex = [];
         this.nowQuestionsIndex = -1;
         this.nowLastQuestion = false;
+        this.wrongCount = 0;
     }
 
     load(questions) {
@@ -27,6 +28,7 @@ class Questioner {
         this.questions = [];
         this.nowQuestionsIndex = -1;
         this.questionsRuntimeIndex = [];
+        this.wrongCount = 0;
 
         if (limit > this.questionsBankBuffer.length) limit = this.questionsBankBuffer.length;
 
@@ -84,6 +86,7 @@ class Questioner {
             return this.answerCorrect();
         } else {
             this.questionsRuntimeIndex.push(q.index);
+            this.wrongCount++;
             return this.answerWrong();
         }
     }
