@@ -322,5 +322,11 @@ let db_question = [
         correct: "热带草原",
         dec: "一种炎热气候下的草原生物群系",
         wrong: ["稀树草原", "萨瓦纳草原", "热带稀树草原"]
+    }, {
+        name: "Milk Bucket",
+        type: "item",
+        correct: "奶桶",
+        dec: "一桶动物产出乳液",
+        wrong: ["牛奶桶", "奶", "牛奶"]
     }
 ];

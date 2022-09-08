@@ -9,6 +9,7 @@ function page_footer() {
                         <div>本测试以 Minecraft ${db_meta.mcVersion} 作为译名标准。</div>
                         <div>题库更新时间：${db_meta.update}</div>
                         <div>题目数量：${db_question.length}</div>
+                        <div>本软件及其文本内容以 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议共享。</div>
                     </div>
                 </div>
                 <div class="footer-right">
