@@ -126,7 +126,7 @@ let db_question = [
         wrong: ["沙粒", "砂砾", "砂粒"]
     }, {
         name: "Prismarine Crystals",
-        type: "block",
+        type: "item",
         correct: "海晶砂粒",
         dec: "一种来自某海洋建筑物的小石子",
         wrong: ["海晶沙粒", "海晶砂砾", "海晶沙砾"]
@@ -166,5 +166,65 @@ let db_question = [
         correct: "圆石台阶",
         dec: "一种石质的半高方块",
         wrong: ["圆石半砖", "原石台阶", "原石半砖"]
+    }, {
+        name: "Oak Pressure Plate",
+        type: "block",
+        correct: "橡木压力板",
+        dec: "一种检测物体按压的红石元件",
+        wrong: ["橡木踏板", "橡木踩板", "橡木压板"]
+    }, {
+        name: "Observer",
+        type: "block",
+        correct: "侦测器",
+        dec: "一种检测方块更新的红石元件",
+        wrong: ["检测器", "观察者", "观测者"]
+    }, {
+        name: "Dragon Head",
+        type: "block",
+        correct: "龙首",
+        dec: "一种生物头装饰方块",
+        wrong: ["龙头", "末影龙头颅", "末影龙的头"]
+    }, {
+        name: "Player Head",
+        type: "block",
+        correct: "玩家的头",
+        dec: "一种生物头装饰方块",
+        wrong: ["玩家头", "玩家头颅", "人类的头"]
+    }, {
+        name: "Skeleton Skull",
+        type: "block",
+        correct: "骷髅头颅",
+        dec: "一种生物头装饰方块",
+        wrong: ["骷髅的头", "骷髅头", "骷髅头骨"]
+    }, {
+        name: "Sticky Piston",
+        type: "block",
+        correct: "黏性活塞",
+        dec: "一种推拉方块的红石元件",
+        wrong: ["粘性活塞", "粘液活塞", "史莱姆活塞"]
+    }, {
+        name: "Slime Block",
+        type: "block",
+        correct: "黏液块",
+        dec: "一种可以带动其他方块随活塞一起运动的方块",
+        wrong: ["粘液块", "史莱姆块", "史莱姆方块"]
+    }, {
+        name: "Acacia Log",
+        type: "block",
+        correct: "金合欢原木",
+        dec: "一种出现在气候炎热的草原上的木材",
+        wrong: ["合金欢原木", "欢金合原木", "欢合金原木"]
+    }, {
+        name: "Warden",
+        type: "mob",
+        correct: "监守者",
+        dec: "一种会追寻振动来源的恐怖怪物",
+        wrong: ["坚守者", "循声守卫", "循声兽"]
+    }, {
+        name: "Creeper",
+        type: "mob",
+        correct: "苦力怕",
+        dec: "一种会自爆的绿油油的吉祥物",
+        wrong: ["爬行者", "爬山虎", "JJ怪"]
     }
 ];

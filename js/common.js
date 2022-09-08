@@ -49,6 +49,8 @@ function qstype(value) {
     let qt = {
         block: "方块",
         item: "物品",
+        entity: "实体",
+        mob: "生物",
         structure: "结构"
     }
     if (qt[value] != undefined) {
