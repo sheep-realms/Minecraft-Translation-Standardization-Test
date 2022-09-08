@@ -64,6 +64,15 @@
     --el-border-color-darker: #cdd0d6;
 }
 
+a {
+    color: var(--el-text-color-regular);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .questioner-btn {
     background-color: var(--el-color-white);
     padding: 0.5rem;
@@ -254,6 +263,10 @@
     text-align: left;
 }
 
+#questioner .footer-right {
+    text-align: right;
+}
+
 #questioner .footer-left-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -298,5 +311,9 @@
     #questioner .footer-left {
         text-align: center;
         width: 100%;
+    }
+
+    #questioner .footer-right {
+        text-align: center;
     }
 }

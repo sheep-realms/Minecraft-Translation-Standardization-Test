@@ -1,12 +1,7 @@
 let questioner = new Questioner();
 
-function page_main() {
-    $('#questioner').html(`
-        <div class="game-subtitle">Minecraft</div>
-        <div class="game-title">译名标准化测试</div>
-        <div class="title-menu">
-            <div class="questioner-btn title-menu-item questioner-start">开始测试</div>
-        </div>
+function page_footer() {
+    return `
         <div class="footer">
             <div class="footer-page">
                 <div class="footer-left">
@@ -18,9 +13,21 @@ function page_main() {
                 </div>
                 <div class="footer-right">
                     <div>© Sheep-realms<div>
+                    <div><a href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a><div>
                 </div>
             </div>
         </div>
+    `;
+}
+
+function page_main() {
+    $('#questioner').html(`
+        <div class="game-subtitle">Minecraft</div>
+        <div class="game-title">译名标准化测试</div>
+        <div class="title-menu">
+            <div class="questioner-btn title-menu-item questioner-start">开始测试</div>
+        </div>
+        ${page_footer()}
     `)
 }
 
@@ -129,20 +136,7 @@ function page_clear() {
             <div class="questioner-btn title-menu-item questioner-next-stage ${btnNextStageClass}">再来几题</div>
             <div class="questioner-btn title-menu-item questioner-mianpage">返回到标题画面</div>
         </div>
-        <div class="footer">
-            <div class="footer-page">
-                <div class="footer-left">
-                    <div class="footer-left-dec">
-                        <div>本测试以 Minecraft ${db_meta.mcVersion} 作为译名标准。</div>
-                        <div>题库更新时间：${db_meta.update}</div>
-                        <div>题目数量：${db_question.length}</div>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <div>© Sheep-realms<div>
-                </div>
-            </div>
-        </div>
+        ${page_footer()}
     `)
 }
 
