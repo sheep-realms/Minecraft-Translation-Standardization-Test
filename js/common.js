@@ -51,6 +51,7 @@ function qstype(value) {
         item: "物品",
         entity: "实体",
         mob: "生物",
+        biome: "生物群系",
         structure: "结构"
     }
     if (qt[value] != undefined) {

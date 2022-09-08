@@ -33,7 +33,7 @@ class Questioner {
         if (limit > this.questionsBankBuffer.length) limit = this.questionsBankBuffer.length;
 
         for (let i = 0; i < limit; i++) {
-            let r = Math.floor((Math.random() * (this.questionsBankBuffer.length - 1)));
+            let r = (Math.random() * (this.questionsBankBuffer.length - 1)).toFixed(0);
             let q = this.questionsBankBuffer.splice(r, 1)[0];
             let a = new Array();
             q.wrong.forEach(e => {

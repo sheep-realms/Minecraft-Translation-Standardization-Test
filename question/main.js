@@ -213,7 +213,7 @@ let db_question = [
         type: "block",
         correct: "金合欢原木",
         dec: "一种出现在气候炎热的草原上的木材",
-        wrong: ["合金欢原木", "欢金合原木", "欢合金原木"]
+        wrong: ["合金欢原木", "合欢原木", "相思木原木"]
     }, {
         name: "Warden",
         type: "mob",
@@ -226,5 +226,101 @@ let db_question = [
         correct: "苦力怕",
         dec: "一种会自爆的绿油油的吉祥物",
         wrong: ["爬行者", "爬山虎", "JJ怪"]
+    }, {
+        name: "Wither",
+        type: "mob",
+        correct: "凋灵",
+        dec: "一种拥有三个头颅的 BOSS 级怪物",
+        wrong: ["凋零", "调灵", "调零"]
+    }, {
+        name: "Allay",
+        type: "mob",
+        correct: "悦灵",
+        dec: "一种喜欢音乐，乐于帮助玩家寻找物品的生物",
+        wrong: ["轻灵", "小安利", "安利"]
+    }, {
+        name: "Area Effect Cloud",
+        type: "entity",
+        correct: "区域效果云",
+        dec: "一种药水喷洒后形成的实体",
+        wrong: ["状态效果云", "药水云", "药水效果云"]
+    }, {
+        name: "Axolotl",
+        type: "mob",
+        correct: "美西螈",
+        dec: "一种可爱的水生生物",
+        wrong: ["墨西哥钝口螈", "蝾螈", "六角恐龙"]
+    }, {
+        name: "Mooshroom",
+        type: "mob",
+        correct: "哞菇",
+        dec: "一种出现在有大量蘑菇的生物群系的变种牛",
+        wrong: ["蘑菇牛", "哞牯", "蘑牯牛"]
+    }, {
+        name: "Polished Deepslate",
+        type: "block",
+        correct: "磨制深板岩",
+        dec: "一种通过简单打磨工艺制成的石制品",
+        wrong: ["錾制深板岩", "磨制深层岩", "錾制深层岩"]
+    }, {
+        name: "Chiseled Deepslate",
+        type: "block",
+        correct: "錾制深板岩",
+        dec: "一种通过特殊切割工艺制成的石制品",
+        wrong: ["磨制深板岩", "錾制深层岩", "磨制深层岩"]
+    }, {
+        name: "Terracotta",
+        type: "block",
+        correct: "陶瓦",
+        dec: "一种通过粘土烧制硬化后的产物",
+        wrong: ["硬化粘土", "硬化黏土", "硬化陶土"]
+    }, {
+        name: "Elytra",
+        type: "item",
+        correct: "鞘翅",
+        dec: "一种可以让玩家在空中滑翔的装备",
+        wrong: ["滑翔翅", "羽翼", "滑翔翼"]
+    }, {
+        name: "Cooked Beef",
+        type: "item",
+        correct: "牛排",
+        dec: "一种将牛肉烹饪制成的食物",
+        wrong: ["熟牛排", "熟牛肉", "牛肉"]
+    }, {
+        name: "Cooked Porkchop",
+        type: "item",
+        correct: "熟猪排",
+        dec: "一种将猪肉烹饪制成的食物",
+        wrong: ["猪排", "熟猪肉", "猪肉"]
+    }, {
+        name: "Cooked Chicken",
+        type: "item",
+        correct: "熟鸡肉",
+        dec: "一种将鸡肉烹饪制成的食物",
+        wrong: ["鸡排", "熟鸡排", "鸡肉"]
+    }, {
+        name: "Raw Beef",
+        type: "item",
+        correct: "生牛肉",
+        dec: "一种通过牛获取的食材",
+        wrong: ["牛肉", "生牛排", "牛排"]
+    }, {
+        name: "Raw Porkchop",
+        type: "item",
+        correct: "生猪排",
+        dec: "一种通过猪获取的食材",
+        wrong: ["猪排", "生猪肉", "猪肉"]
+    }, {
+        name: "Raw Chicken",
+        type: "item",
+        correct: "生鸡肉",
+        dec: "一种通过鸡获取的食材",
+        wrong: ["鸡排", "生鸡排", "鸡肉"]
+    }, {
+        name: "Savanna",
+        type: "biome",
+        correct: "热带草原",
+        dec: "一种炎热气候下的草原生物群系",
+        wrong: ["稀树草原", "萨瓦纳草原", "热带稀树草原"]
     }
 ];
