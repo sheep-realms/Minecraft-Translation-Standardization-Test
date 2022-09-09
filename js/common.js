@@ -53,7 +53,9 @@ function qstype(value) {
         entity: "实体",
         mob: "生物",
         biome: "生物群系",
-        structure: "结构"
+        structure: "结构",
+        gamemode: "游戏模式",
+        gameplay: "游戏内容"
     }
     if (qt[value] != undefined) {
         return qt[value];
@@ -153,7 +155,7 @@ function page_clear() {
         <div class="game-dec">${dec}</div>
         <div class="title-menu">
             <div class="questioner-btn title-menu-item questioner-next-stage ${btnNextStageClass}">再来几题</div>
-            <div class="questioner-btn title-menu-item questioner-mianpage">返回到标题画面</div>
+            <div class="questioner-btn title-menu-item questioner-mianpage">返回首页</div>
         </div>
         ${page_footer()}
     `)

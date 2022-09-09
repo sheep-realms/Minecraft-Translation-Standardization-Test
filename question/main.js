@@ -1,6 +1,6 @@
 let db_meta = {
     mcVersion: "Java版 1.19",
-    update: "2022/9/8"
+    update: "2022/9/9"
 }
 
 let db_question = [
@@ -328,5 +328,101 @@ let db_question = [
         correct: "奶桶",
         dec: "一桶动物产出乳液",
         wrong: ["牛奶桶", "奶", "牛奶"]
+    }, {
+        name: "Lightning Rod",
+        type: "block",
+        correct: "避雷针",
+        dec: "一种吸引闪电的红石元件",
+        wrong: ["接闪杆", "引雷针", "雷霆之杖"]
+    }, {
+        name: "Infested Stone",
+        type: "block",
+        correct: "被虫蚀的石头",
+        dec: "一种被某种虫类生物蛀蚀的石头",
+        wrong: ["石头蠹虫刷怪蛋", "被虫蛀的石头", "有蠹虫的石头"]
+    }, {
+        name: "Charged Creeper",
+        type: "mob",
+        correct: "闪电苦力怕",
+        dec: "一种被雷击中的会自爆的绿油油的吉祥物",
+        wrong: ["闪电爬行者", "高压苦力怕", "高压爬行者"]
+    }, {
+        name: "Ender Crystal",
+        type: "entity",
+        correct: "末地水晶",
+        dec: "一种可以为末地的 BOSS 治疗的实体",
+        wrong: ["末影水晶", "紫影水晶", "紫颂水晶"]
+    }, {
+        name: "Fishing Bobber",
+        type: "entity",
+        correct: "浮漂",
+        dec: "一种钓鱼时抛出去的实体",
+        wrong: ["浮标", "浮球", "鱼钩"]
+    }, {
+        name: "Pufferfish",
+        type: "mob",
+        correct: "河豚",
+        dec: "一种遇到危险时会充气的有毒鱼类",
+        wrong: ["河鲀", "淡水海豚", "淡水鲸"]
+    }, {
+        name: "Shulker Bullet",
+        type: "entity",
+        correct: "潜影弹",
+        dec: "一种由某种末地怪物发射的追踪弹",
+        wrong: ["潜影贝导弹", "潜影球", "漂浮弹"]
+    }, {
+        name: "Spectator",
+        type: "gamemode",
+        correct: "旁观模式",
+        dec: "一种允许玩家以飞行的方式无障碍穿过和观察世界的游戏模式",
+        wrong: ["旁观者模式", "观察模式", "观察者模式"]
+    }, {
+        name: "Scoreboard",
+        type: "gameplay",
+        correct: "记分板",
+        dec: "一套通过命令操纵的复杂游戏机制",
+        wrong: ["记分版", "计分板", "计分版"]
+    }, {
+        name: "Status Effect",
+        type: "gameplay",
+        correct: "状态效果",
+        dec: "一种作用于实体并对其产生正面或负面影响的游戏机制",
+        wrong: ["药水效果", "实体效果", "效果"]
+    }, {
+        name: "Raid",
+        type: "gameplay",
+        correct: "袭击",
+        dec: "一种在带有特定效果的玩家进入村庄时触发的游戏事件",
+        wrong: ["掠夺", "劫掠", "屠村"]
+    }, {
+        name: "Nether Portal",
+        type: "structure",
+        correct: "下界传送门",
+        dec: "一种连通两个维度的传送门结构",
+        wrong: ["地狱传送门", "炼狱传送门", "冥界传送门"]
+    }, {
+        name: "Dirt Path",
+        type: "block",
+        correct: "土径",
+        dec: "一种村庄的道路方块",
+        wrong: ["草径", "路", "路径"]
+    }, {
+        name: "Powered Rail",
+        type: "block",
+        correct: "动力铁轨",
+        dec: "一种能够使矿车加速或停止的方块",
+        wrong: ["充能铁轨", "激活铁轨", "加速铁轨"]
+    }, {
+        name: "Sandstone",
+        type: "block",
+        correct: "砂岩",
+        dec: "一种常见于沙漠和沙滩的石头",
+        wrong: ["沙岩", "沙石", "砂石"]
+    }, {
+        name: "Pumpkin Stem",
+        type: "block",
+        correct: "南瓜茎",
+        dec: "一种植物的根茎",
+        wrong: ["南瓜梗", "南瓜根", "南瓜藤"]
     }
 ];
