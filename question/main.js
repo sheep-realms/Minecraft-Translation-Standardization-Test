@@ -424,5 +424,11 @@ let db_question = [
         correct: "南瓜茎",
         dec: "一种植物的根茎",
         wrong: ["南瓜梗", "南瓜根", "南瓜藤"]
+    }, {
+        name: "Title Screen",
+        type: "gameplay",
+        correct: "标题屏幕",
+        dec: "开启游戏显示完Mojang徽标后显示的东西",
+        wrong: ["标题画面", "菜单画面", "主菜单"],
     }
 ];
