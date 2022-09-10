@@ -428,7 +428,7 @@ let db_question = [
         name: "Title Screen",
         type: "gameplay",
         correct: "标题屏幕",
-        dec: "开启游戏显示完Mojang徽标后显示的东西",
+        dec: "在启动游戏显示完 Mojang 徽标之后显示的界面",
         wrong: ["标题画面", "菜单画面", "主菜单"],
     }
 ];
