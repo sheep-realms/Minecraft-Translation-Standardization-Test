@@ -82,7 +82,7 @@ function page_questioner(question, progress='0%') {
                 <div class="footer-right">
                     <div class="questioner-action">
                         <div class="questioner-btn questioner-next">继续</div>
-                        <div class="questioner-issues"><a target="_blank" href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test/issues/new?title=题目 ${question.name} 纠错&labels=题目纠错">我要纠错</a></div>
+                        <div class="questioner-issues"><a target="_blank" href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test/issues/new?assignees=&labels=题目纠错&template=question.md&title=题目 ${question.name} 纠错">我要纠错</a></div>
                     </div>
                 </div>
             </div>
