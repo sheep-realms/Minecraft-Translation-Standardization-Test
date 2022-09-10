@@ -55,7 +55,7 @@ class Questioner {
             code: "ready",
             index: this.nowQuestionsIndex,
             indexList: this.questionsRuntimeIndex,
-            progress: ((this.nowQuestionsIndex / this.questionsRuntimeIndex.length) * 100) + "%",
+            progress: "0%",
             length: this.questionsRuntimeIndex.length,
             questions: this.questions
         };
@@ -118,7 +118,7 @@ class Questioner {
         return {
             code: "end",
             index: this.nowQuestionsIndex,
-            progress: (((this.nowQuestionsIndex + 1) / this.questionsRuntimeIndex.length) * 100) + "%",
+            progress: "100%",
             length: this.questionsRuntimeIndex.length
         };
     }
