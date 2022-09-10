@@ -310,6 +310,7 @@ a:hover {
 
 #questioner .questioner-action {
     text-align: center;
+    padding-top: 1rem;
 }
 
 #questioner .questioner-action .questioner-issues {
@@ -318,8 +319,13 @@ a:hover {
     transition: opacity .3s;
 }
 
-#questioner .questioner-action:hover .questioner-issues {
+#questioner .questioner-action .questioner-issues:hover {
     opacity: 1;
+}
+
+#questioner .questioner-btn:active+.questioner-issues {
+    position: relative;
+    margin-top: calc(0.5rem + 3px);
 }
 
 @media only screen and (max-width: 567px) {
@@ -344,9 +350,5 @@ a:hover {
 
     #questioner .footer-right {
         text-align: center;
-    }
-
-    #questioner .questioner-action {
-        margin-top: 1rem;
     }
 }

@@ -113,6 +113,7 @@ function answerCheck(value) {
     let data = questioner.answerCheck(value);
     if (data.code == 'correct') {
         $('#questioner .footer-left-title').text('答对啦！');
+        $('#questioner .footer-left-dec').text('正确答案是：' + data.question.correct);
         $('#questioner .footer').removeClass('disable');
         $('#questioner .footer').addClass('correct');
         $('#questioner .answer.sel').addClass('correct');
