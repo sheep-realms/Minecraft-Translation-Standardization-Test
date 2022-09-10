@@ -1,6 +1,6 @@
 let db_meta = {
     mcVersion: "Java版 1.19",
-    update: "2022/9/9"
+    update: "2022/9/10"
 }
 
 let db_question = [
