@@ -120,7 +120,7 @@
 ]
 ```
 
-<details>
+</details>
 
 ### start
 开始测试，随机抽取指定数量的题目，刷新题目索引，重置问答索引。
@@ -329,7 +329,7 @@
 }
 ```
 
-<details>
+</details>
 
 ### next
 下一题，增加问答索引号。若当前是最后一题，则报告测试结束。
@@ -369,7 +369,7 @@
 }
 ```
 
-<details>
+</details>
 
 ### answerCheck
 回答检查。
@@ -418,7 +418,7 @@
 }
 ```
 
-<details>
+</details>
 
 ### answerWrong
 返回回答错误。
@@ -457,7 +457,7 @@
 }
 ```
 
-<details>
+</details>
 
 ### end
 结束测试，增加问答索引号。
@@ -477,4 +477,4 @@
 }
 ```
 
-<details>
+</details>
