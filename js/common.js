@@ -9,14 +9,14 @@ function page_footer() {
                         <div>本测试以 Minecraft ${db_meta.mcVersion} 作为译名标准。</div>
                         <div>题库更新时间：${db_meta.update}</div>
                         <div>题目数量：${db_question.length}</div>
-                        <div>本软件及其文本内容以 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议共享。</div>
+                        <div>本软件及其文本内容以 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 协议共享。</div>
                     </div>
                 </div>
                 <div class="footer-right">
-                    <div><a href="https://github.com/sheep-realms">Sheep-realms</a><div>
+                    <div><a target="_blank" href="https://github.com/sheep-realms">Sheep-realms</a><div>
                     <div>
-                        <a href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a> | 
-                        <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化">译名标准化</a>
+                        <a target="_blank" href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a> | 
+                        <a target="_blank" href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化">译名标准化</a>
                     <div>
                 </div>
             </div>
@@ -80,7 +80,10 @@ function page_questioner(question, progress='0%') {
                     <div class="footer-left-dec"></div>
                 </div>
                 <div class="footer-right">
-                    <div class="questioner-btn questioner-next">继续</div>
+                    <div class="questioner-action">
+                        <div class="questioner-btn questioner-next">继续</div>
+                        <div class="questioner-issues"><a target="_blank" href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test/issues/new?title=题目 ${question.name} 纠错&labels=题目纠错">我要纠错</a></div>
+                    </div>
                 </div>
             </div>
         </div>
