@@ -1,6 +1,6 @@
 ---
 name: 题目纠错
-about: 这道题有问题！
+about: 这道题有问题！如果你知道该怎么做，你也可以直接发起 PR！
 labels: 题目纠错
 ---
 - [x] 我已确认正确答案与[标准译名列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化)内容不符。
