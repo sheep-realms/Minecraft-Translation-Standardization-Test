@@ -19,7 +19,7 @@
 | questions | Array | 当前测试中的题目列表 | [] |
 | questionsBankBuffer | Array | 题库缓冲区，用于抽取题目 | [] |
 | questionsRuntimeIndex | Array | 题目索引，用于控制出题顺序 | [] |
-| nowQuestionsIndex | Number | 当前问答索引 | -1 |
+| nowQuestionsIndex | Number | 当前问答索引（或者说是 “游标”） | -1 |
 | nowLastQuestion | Boolean | 当前问题是否是最后一题 | false |
 | wrongCount | Number | 错题次数 | 0 |
 
@@ -337,6 +337,8 @@
 | 返回值 |
 | - |
 | 特定格式的消息 |
+
+此方法用于控制出题，在测试开始以及每次回答之后都要执行此方法来继续出题。在此过程中，问答索引会被增加，类似于数据库查询中 “游标” 的概念。
 
 <details>
 <summary>返回示例</summary>
