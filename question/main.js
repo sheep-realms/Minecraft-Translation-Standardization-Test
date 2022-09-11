@@ -347,7 +347,7 @@ let db_question = [
         dec: "一种被雷击中的会自爆的绿油油的吉祥物",
         wrong: ["闪电爬行者", "高压苦力怕", "高压爬行者"]
     }, {
-        name: "Ender Crystal",
+        name: "End Crystal",
         type: "entity",
         correct: "末地水晶",
         dec: "一种可以为末地的 BOSS 治疗的实体",
