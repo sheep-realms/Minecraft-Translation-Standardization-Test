@@ -1,6 +1,6 @@
 let db_meta = {
     mcVersion: "Java版 1.19",
-    update: "2022/9/10"
+    update: "2022/9/11"
 }
 
 let db_question = [
@@ -266,7 +266,7 @@ let db_question = [
         name: "Chiseled Deepslate",
         type: "block",
         correct: "錾制深板岩",
-        dec: "一种通过特殊切割工艺制成的石制品",
+        dec: "一种通过特殊雕刻工艺制成的石制品",
         wrong: ["磨制深板岩", "錾制深层岩", "磨制深层岩"]
     }, {
         name: "Terracotta",
@@ -430,5 +430,59 @@ let db_question = [
         correct: "标题屏幕",
         dec: "在启动游戏显示完 Mojang 徽标之后显示的界面",
         wrong: ["标题画面", "菜单画面", "主菜单"],
+    }, {
+        name: "Amethyst Bud",
+        type: "block",
+        correct: "紫晶芽",
+        dec: "一种处于初期生长阶段的水晶矿石",
+        wrong: ["紫水晶芽", "紫晶簇", "紫水晶簇"],
+    }, {
+        name: "Ancient Debris",
+        type: "block",
+        correct: "远古残骸",
+        dec: "一种出现在下界的坚硬的稀有矿石",
+        wrong: ["远古遗骸", "下界合金矿石", "远古矿石"],
+    }, {
+        name: "Campfire",
+        type: "block",
+        correct: "营火",
+        dec: "一种简单的烹饪装置",
+        wrong: ["篝火", "炭火", "火堆"],
+    }, {
+        name: "Lily Pad",
+        type: "block",
+        correct: "睡莲",
+        dec: "一种浮于水面的水生植物",
+        wrong: ["荷叶", "莲叶", "莲花"],
+    }, {
+        name: "Snow",
+        type: "block",
+        correct: "雪",
+        dec: "一种覆盖于方块顶部的可物理堆叠的不完整方块",
+        wrong: ["雪地", "雪片", "顶层雪"],
+    }, {
+        name: "Target",
+        type: "block",
+        correct: "标靶",
+        dec: "一种检测弹射物攻击的红石元件",
+        wrong: ["靶子", "指标", "目标"],
+    }, {
+        name: "Minecart With Chest",
+        type: "entity",
+        correct: "运输矿车",
+        dec: "一种装有箱子的行驶于轨道上的载具",
+        wrong: ["箱子矿车", "货运矿车", "传输矿车"],
+    }, {
+        name: "Nether Wart",
+        type: "block",
+        correct: "下界疣",
+        dec: "一种生长在灵魂沙上的植物",
+        wrong: ["地狱疣", "下界尤", "地狱尤"],
+    }, {
+        name: "Nether Fortress",
+        type: "block",
+        correct: "下界要塞",
+        dec: "一种出现在特定维度的大型建筑结构",
+        wrong: ["地狱要塞", "下界堡垒", "地狱堡垒"],
     }
 ];
