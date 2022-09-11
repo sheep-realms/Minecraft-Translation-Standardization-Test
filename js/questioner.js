@@ -24,7 +24,7 @@ class Questioner {
         return output;
     }
 
-    start(limit) {
+    start(limit=10) {
         this.questions = [];
         this.nowQuestionsIndex = -1;
         this.questionsRuntimeIndex = [];
