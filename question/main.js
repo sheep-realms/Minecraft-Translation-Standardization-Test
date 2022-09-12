@@ -1,6 +1,6 @@
 let db_meta = {
     mcVersion: "Java版 1.19",
-    update: "2022/9/11"
+    update: "2022/9/12"
 }
 
 let db_question = [
@@ -480,9 +480,69 @@ let db_question = [
         wrong: ["地狱疣", "下界尤", "地狱尤"],
     }, {
         name: "Nether Fortress",
-        type: "block",
+        type: "structure",
         correct: "下界要塞",
         dec: "一种出现在特定维度的大型建筑结构",
         wrong: ["地狱要塞", "下界堡垒", "地狱堡垒"],
+    }, {
+        name: "Badlands",
+        type: "biome",
+        correct: "恶地",
+        dec: "一种由陶瓦、染色陶瓦、红沙构成的，稀有的生物群系",
+        wrong: ["粘土山", "黏土山", "平顶山"],
+    }, {
+        name: "Jagged Peaks",
+        type: "biome",
+        correct: "尖峭山峰",
+        dec: "一种在较高的海拔生成的，山地的普通山顶变种生物群系",
+        wrong: ["陡峭山峰", "尖峭山崖", "陡峭山崖"],
+    }, {
+        name: "Dark Forest",
+        type: "biome",
+        correct: "黑森林",
+        dec: "一种以茂密的树冠著称的，森林类型的生物群系",
+        wrong: ["叶盖森林", "深色橡木林", "黑色橡木林"],
+    }, {
+        name: "Windswept Hills",
+        type: "biome",
+        correct: "风袭丘陵",
+        dec: "一种由草方块及石头，沙砾构成的，罕见的生物群系",
+        wrong: ["风蚀山坡", "风袭山坡", "风蚀丘陵"],
+    }, {
+        name: "Detector Rail",
+        type: "block",
+        correct: "探测铁轨",
+        dec: "一种功能上类似于压力板的铁轨",
+        wrong: ["感应铁轨", "压感铁轨", "侦测铁轨"],
+    }, {
+        name: "Minecart with Chest",
+        type: "entity",
+        correct: "运输矿车",
+        dec: "一种由玩家合成或在废弃矿井找到的，装有箱子的矿车",
+        wrong: ["箱子矿车", "储物矿车", "箱子和矿车"],
+    }, {
+        name: "Boat with Chest",
+        type: "entity",
+        correct: "运输船",
+        dec: "一种由玩家合成的，装有箱子的船",
+        wrong: ["箱船", "货船", "箱子和船"],
+    }, {
+        name: "Minecart with Furnace",
+        type: "entity",
+        correct: "动力矿车",
+        dec: "一种熔炉在矿车里所组成的实体",
+        wrong: ["蒸汽矿车", "蒸汽机车", "熔炉矿车"],
+    }, {
+        name: "Lodestone Compass",
+        type: "item",
+        correct: "磁石指针",
+        dec: "一种由指南针与磁石绑定得到的物品",
+        wrong: ["磁化指针", "磁石指南针", "磁化指南针"],
+    }, {
+        name: "Glow Item Frame",
+        type: "item",
+        correct: "荧光物品展示框",
+        dec: "物品展示框的增亮变种",
+        wrong: ["荧光展示框", "发光物品展示框", "发光展示框"],
     }
 ];
