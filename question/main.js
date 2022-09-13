@@ -1,6 +1,6 @@
 let db_meta = {
     mcVersion: "Java版 1.19",
-    update: "2022/9/11"
+    update: "2022/9/13"
 }
 
 let db_question = [
@@ -480,7 +480,7 @@ let db_question = [
         wrong: ["地狱疣", "下界尤", "地狱尤"],
     }, {
         name: "Nether Fortress",
-        type: "block",
+        type: "structure",
         correct: "下界要塞",
         dec: "一种出现在特定维度的大型建筑结构",
         wrong: ["地狱要塞", "下界堡垒", "地狱堡垒"],
