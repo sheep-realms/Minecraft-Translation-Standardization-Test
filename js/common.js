@@ -19,7 +19,7 @@ function page_footer() {
                     <div>
                     <div>
                         <a target="_blank" href="https://github.com/sheep-realms/Minecraft-Translation-Standardization-Test">Github</a> | 
-                        <a target="_blank" href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:译名标准化">译名标准化</a>
+                        <a target="_blank" href="https://zh.minecraft.wiki/w/Minecraft_Wiki:译名标准化">译名标准化</a>
                     <div>
                 </div>
             </div>
