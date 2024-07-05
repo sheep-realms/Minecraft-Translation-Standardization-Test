@@ -57,6 +57,8 @@ function qstype(value) {
         mob: "生物",
         biome: "生物群系",
         structure: "结构",
+        effect: "状态效果",
+        enchantment: "魔咒",
         gamemode: "游戏模式",
         gameplay: "游戏内容"
     }
@@ -152,7 +154,7 @@ function page_clear() {
         dec = "错题 " + questioner.wrongCount + " 次，要牢记标准译名哦！";
     }
     if (questioner.questionsBankBuffer.length == 0) {
-        dec += "没有更多条目啦！";
+        dec += "没有更多题目啦！";
         btnNextStageClass = "disable";
     }
 

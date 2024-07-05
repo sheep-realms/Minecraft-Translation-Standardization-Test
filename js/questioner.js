@@ -30,7 +30,7 @@ class Questioner {
         this.questionsRuntimeIndex = [];
         this.wrongCount = 0;
 
-        if (limit > this.questionsBankBuffer.length) limit = this.questionsBankBuffer.length;
+        if ((limit + 4) > this.questionsBankBuffer.length) limit = this.questionsBankBuffer.length;
 
         for (let i = 0; i < limit; i++) {
             let r = (Math.random() * (this.questionsBankBuffer.length - 1)).toFixed(0);

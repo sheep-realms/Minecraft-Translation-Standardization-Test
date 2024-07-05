@@ -1,6 +1,6 @@
 let db_meta = {
-    mcVersion: "Java版 1.19",
-    update: "2022/9/13"
+    mcVersion: "Java版 1.21",
+    update: "2024/7/5"
 }
 
 let db_question = [
@@ -221,6 +221,36 @@ let db_question = [
         dec: "一种会追寻振动来源的恐怖怪物",
         wrong: ["坚守者", "循声守卫", "循声兽"]
     }, {
+        name: "Deep Dark",
+        type: "biome",
+        correct: "深暗之域",
+        dec: "一种以特殊的黑暗的方块为特征的洞穴生物群系",
+        wrong: ["深邃之域", "幽匿之地", "深邃黑暗之地"]
+    }, {
+        name: "Sculk Sensor",
+        type: "block",
+        correct: "幽匿感测体",
+        dec: "一种可以检测振动并发出红石信号的方块",
+        wrong: ["潜声传感器", "幽暗感测体", "深暗感测体"]
+    }, {
+        name: "Disc Fragment",
+        type: "item",
+        correct: "唱片残片",
+        dec: "一种用于合成相应的音乐唱片的物品",
+        wrong: ["唱片碎片", "唱片小片", "唱片裂片"]
+    }, {
+        name: "Ancient City",
+        type: "structure",
+        correct: "远古城市",
+        dec: "一种生成于某种黑暗的生物群系的大型的地下结构",
+        wrong: ["深暗城市", "深邃城市", "上古城市"]
+    }, {
+        name: "Echo Shard",
+        type: "item",
+        correct: "回响碎片",
+        dec: "一种用于合成追溯指针的物品",
+        wrong: ["回响残片", "回声碎片", "回声残片"]
+    }, {
         name: "Creeper",
         type: "mob",
         correct: "苦力怕",
@@ -265,9 +295,9 @@ let db_question = [
     }, {
         name: "Chiseled Deepslate",
         type: "block",
-        correct: "錾制深板岩",
+        correct: "雕纹深板岩",
         dec: "一种通过特殊雕刻工艺制成的石制品",
-        wrong: ["磨制深板岩", "錾制深层岩", "磨制深层岩"]
+        wrong: ["磨制深板岩", "錾制深板岩", "磨制深层岩"]
     }, {
         name: "Terracotta",
         type: "block",
@@ -329,6 +359,12 @@ let db_question = [
         dec: "一桶动物产出乳液",
         wrong: ["牛奶桶", "奶", "牛奶"]
     }, {
+        name: "Bucket",
+        type: "item",
+        correct: "铁桶",
+        dec: "一种用于携带流体或某些水生生物的工具",
+        wrong: ["桶", "小桶", "铁盆"]
+    }, {
         name: "Lightning Rod",
         type: "block",
         correct: "避雷针",
@@ -337,9 +373,9 @@ let db_question = [
     }, {
         name: "Infested Stone",
         type: "block",
-        correct: "被虫蚀的石头",
+        correct: "虫蚀石头",
         dec: "一种被某种虫类生物蛀蚀的石头",
-        wrong: ["石头蠹虫刷怪蛋", "被虫蛀的石头", "有蠹虫的石头"]
+        wrong: ["石头蠹虫刷怪蛋", "被虫蛀的石头", "被虫蚀的石头"]
     }, {
         name: "Charged Creeper",
         type: "mob",
@@ -484,5 +520,89 @@ let db_question = [
         correct: "下界要塞",
         dec: "一种出现在特定维度的大型建筑结构",
         wrong: ["地狱要塞", "下界堡垒", "地狱堡垒"],
+    }, {
+        name: "Bricks",
+        type: "block",
+        correct: "红砖块",
+        dec: "一种装饰用的红色的建筑方块",
+        wrong: ["砖块", "红砖头块", "砖头块"],
+    }, {
+        name: "Light",
+        type: "block",
+        correct: "光源方块",
+        dec: "一种隐形的发光方块",
+        wrong: ["光", "光方块", "光块"],
+    }, {
+        name: "Awkward Potion",
+        type: "item",
+        correct: "粗制的药水",
+        dec: "所有主要药水的基础药水",
+        wrong: ["粗制药水", "平凡的药水", "平凡药水"],
+    }, {
+        name: "Feather Falling",
+        type: "enchantment",
+        correct: "摔落缓冲",
+        dec: "一种用于减少摔落伤害的魔咒",
+        wrong: ["摔落保护", "掉落保护", "羽落"],
+    }, {
+        name: "Hay Bale",
+        type: "block",
+        correct: "干草捆",
+        dec: "一种存储了一些小麦的方块",
+        wrong: ["干草块", "干草垛", "干草卷"],
+    }, {
+        name: "Ice Spikes",
+        type: "biome",
+        correct: "冰刺之地",
+        dec: "一种含有大量冰刺的雪原变种生物群系",
+        wrong: ["冰刺平原", "冰刺雪原", "冰刺冰原"],
+    }, {
+        name: "Moss Carpet",
+        type: "block",
+        correct: "覆地苔藓",
+        dec: "一种有苔藓块纹理的类似于地毯的装饰性方块",
+        wrong: ["苔藓地毯", "覆盖苔藓", "苔藓片"],
+    }, {
+        name: "Mycelium",
+        type: "block",
+        correct: "菌丝体",
+        dec: "一种在蘑菇岛生物群系自然生成的泥土变种方块",
+        wrong: ["菌丝", "菌丝块", "菌丝方块"],
+    }, {
+        name: "Speed",
+        type: "effect",
+        correct: "迅捷",
+        dec: "一种提升生物行走速度的状态效果",
+        wrong: ["速度", "快速", "迅速"],
+    }, {
+        name: "Suspicious Stew",
+        type: "item",
+        correct: "谜之炖菜",
+        dec: "一种可以给予玩家各种效果的食物",
+        wrong: ["迷之炖菜", "可疑的炖菜", "秘之炖菜"],
+    }, {
+        name: "Badlands",
+        type: "biome",
+        correct: "恶地",
+        dec: "一种由红沙及各种染色方块构成的稀有的生物群系",
+        wrong: ["粘土山", "黏土山", "陶瓦山"],
+    }, {
+        name: "Bamboo Mosaic",
+        type: "block",
+        correct: "竹马赛克",
+        dec: "一种由竹子作为材料合成的装饰性方块",
+        wrong: ["竹编", "竹拼图", "竹像素"],
+    }, {
+        name: "Bamboo Raft",
+        type: "entity",
+        correct: "竹筏",
+        dec: "一种竹制的水上交通工具",
+        wrong: ["竹木船", "竹船", "竹子船"],
+    }, {
+        name: "Cherry Log",
+        type: "block",
+        correct: "樱花原木",
+        dec: "一种组成树干的方块",
+        wrong: ["樱花木原木", "樱木原木", "樱花树原木"],
     }
 ];
