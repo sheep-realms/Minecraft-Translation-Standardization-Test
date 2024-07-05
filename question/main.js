@@ -604,5 +604,65 @@ let db_question = [
         correct: "樱花原木",
         dec: "一种组成树干的方块",
         wrong: ["樱花木原木", "樱木原木", "樱花树原木"],
+    }, {
+        name: "Suspicious Sand",
+        type: "block",
+        correct: "可疑的沙子",
+        dec: "一种供玩家考古的方块",
+        wrong: ["谜之沙子", "迷之沙子", "秘之沙子"],
+    }, {
+        name: "Waxed Weathered Cut Copper Stairs",
+        type: "block",
+        correct: "涂蜡的锈蚀切制铜楼梯",
+        dec: "一种名字长得离谱的铜制方块",
+        wrong: ["锈蚀的涂蜡切制铜楼梯", "涂蜡的锈蚀雕纹铜楼梯", "锈蚀的涂蜡雕纹铜楼梯"],
+    }, {
+        name: "Clay",
+        type: "block",
+        correct: "黏土",
+        dec: "一种可以在河床中采集到的方块",
+        wrong: ["粘土", "黏土块", "粘土块"],
+    }, {
+        name: "Breeze",
+        type: "mob",
+        correct: "旋风人",
+        dec: "一种只在某种结构的特定决斗室内生成的敌对生物",
+        wrong: ["微风人", "凛风人", "狂风人"],
+    }, {
+        name: "Heavy Core",
+        type: "block",
+        correct: "沉重核心",
+        dec: "一种从不祥宝库中获得的可以合成特定武器的方块",
+        wrong: ["重核", "重型核心", "大型核心"],
+    }, {
+        name: "Mace",
+        type: "item",
+        correct: "重锤",
+        dec: "一种可以提高下落攻击伤害并提供击退效果的近战武器",
+        wrong: ["锤", "战锤", "锤矛"],
+    }, {
+        name: "Trial Chambers",
+        type: "item",
+        correct: "试炼密室",
+        dec: "一种包含特殊刷怪笼和宝库的地下结构",
+        wrong: ["试练密室", "挑战密室", "决斗密室"],
+    }, {
+        name: "Bogged",
+        type: "mob",
+        correct: "沼骸",
+        dec: "一种生成于沼泽中的骷髅变种",
+        wrong: ["泥骸", "陷泥者", "沉沼者"],
+    }, {
+        name: "Stray",
+        type: "mob",
+        correct: "流浪者",
+        dec: "一种只生成在有雪的生物群系里的骷髅变种",
+        wrong: ["流髑", "流浪骷髅", "游荡骷髅"],
+    }, {
+        name: "Illager",
+        type: "mobs",
+        correct: "灾厄村民",
+        dec: "一类外观与村民类似敌对生物族群",
+        wrong: ["刌民", "暴民", "不祥村民"],
     }
 ];

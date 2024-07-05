@@ -55,6 +55,7 @@ function qstype(value) {
         item: "物品",
         entity: "实体",
         mob: "生物",
+        mobs: "生物族群",
         biome: "生物群系",
         structure: "结构",
         effect: "状态效果",
