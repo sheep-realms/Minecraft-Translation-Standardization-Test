@@ -1,5 +1,7 @@
 let questioner = new Questioner();
 
+let inCombo = false;
+
 function page_footer() {
     return `
         <div class="footer">
@@ -73,7 +75,7 @@ function qstype(value) {
 function page_questioner(question, progress='0%') {
     $('#questioner').html(`
         <div class="progress">
-            <div class="progress-content" style="width:${progress};"></div>
+            <div class="progress-content ${inCombo ? 'combo' : ''}" style="width:${progress};"></div>
         </div>
         <div class="title">${question.name}</div>
         <div class="type">${qstype(question?.type)}</div>
@@ -131,6 +133,13 @@ function answerCheck(value) {
         $('#questioner .answer.sel').addClass('wrong');
     }
     $('#questioner .progress-content').css('width', data.progress);
+    if (data.combos >= 4) {
+        $('#questioner .progress-content').addClass('combo');
+        inCombo = true;
+    } else {
+        $('#questioner .progress-content').removeClass('combo');
+        inCombo = false;
+    }
 }
 
 $(document).on('click', '#questioner .footer:not(.disable) .questioner-next', function() {

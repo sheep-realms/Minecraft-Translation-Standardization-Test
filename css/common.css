@@ -137,6 +137,19 @@ a:hover {
     background-color: var(--el-color-danger-light-7);
 }
 
+.questioner-btn.correct.sel {
+    animation: questioner-btn-sel-correct .3s ease-out 0s 1;
+}
+
+@keyframes questioner-btn-sel-correct {
+    0% {
+        box-shadow: 0 0 0 0 var(--el-color-success-light-3);
+    }
+    100% {
+        box-shadow: 0 0 0 1rem transparent;
+    }
+}
+
 
 
 #questioner {
@@ -194,11 +207,43 @@ a:hover {
 }
 
 #questioner .progress-content {
-    background-color: var(--el-color-success);
+    --color-progress: var(--el-color-success);
+    --color-progress-light: var(--el-color-success-light-3);
+    background-color: var(--color-progress-light);
     height: 0.75rem;
-    transition: width .3s;
+    transition: width .3s, background-color .3s, box-shadow .3s;
     /* box-sizing: border-box;
-    border-bottom: var(--el-color-success-dark-2) 2px solid; */
+    border: var(--el-color-success) 4px solid;
+    border-width: 0.2rem 1rem 0.35rem 1rem;  */
+    box-shadow: inset 0 -0.075rem 0 0.25rem var(--color-progress);
+    position: relative;
+    overflow: hidden;
+    /* background-image: linear-gradient(to right, var(--color-progress) 0.75rem, transparent 0.75rem), linear-gradient(to left, var(--color-progress) 0.75rem, transparent 0.75rem); */
+}
+
+#questioner .progress-content::before,
+#questioner .progress-content::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-progress);
+    height: 0.75rem;
+    width: 0.75rem;
+    transition: background-color .3s;
+}
+
+#questioner .progress-content::before {
+    left: 0;
+    top: 0;
+}
+
+#questioner .progress-content::after {
+    right: 0;
+    top: 0;
+}
+
+#questioner .progress-content.combo {
+    --color-progress: var(--el-color-warning);
+    --color-progress-light: var(--el-color-warning-light-3);
 }
 
 #questioner .title {

@@ -6,6 +6,8 @@ class Questioner {
         this.nowQuestionsIndex = -1;
         this.nowLastQuestion = false;
         this.wrongCount = 0;
+        this.combos = 0;
+        this.maxCombos = 0;
     }
 
     load(questions) {
@@ -29,6 +31,8 @@ class Questioner {
         this.nowQuestionsIndex = -1;
         this.questionsRuntimeIndex = [];
         this.wrongCount = 0;
+        this.combos = 0;
+        this.maxCombos = 0;
 
         if ((limit + 4) > this.questionsBankBuffer.length) limit = this.questionsBankBuffer.length;
 
@@ -83,10 +87,13 @@ class Questioner {
     answerCheck(value) {
         let q = this.questions[this.questionsRuntimeIndex[this.nowQuestionsIndex]];
         if (q.answers[value] == q.correct) {
+            this.combos++;
+            if (this.combos > this.maxCombos) this.maxCombos = this.combos;
             return this.answerCorrect();
         } else {
             this.questionsRuntimeIndex.push(q.index);
             this.wrongCount++;
+            this.combos = 0;
             return this.answerWrong();
         }
     }
@@ -96,6 +103,7 @@ class Questioner {
             code: "correct",
             index: this.nowQuestionsIndex,
             progress: (((this.nowQuestionsIndex + 1) / this.questionsRuntimeIndex.length) * 100) + "%",
+            combos: this.combos,
             length: this.questionsRuntimeIndex.length,
             question: this.questions[this.questionsRuntimeIndex[this.nowQuestionsIndex]],
             nowLastQuestion: this.nowLastQuestion
@@ -107,6 +115,7 @@ class Questioner {
             code: "wrong",
             index: this.nowQuestionsIndex,
             progress: (((this.nowQuestionsIndex + 1) / this.questionsRuntimeIndex.length) * 100) + "%",
+            combos: this.combos,
             length: this.questionsRuntimeIndex.length,
             question: this.questions[this.questionsRuntimeIndex[this.nowQuestionsIndex]],
             nowLastQuestion: this.nowLastQuestion
